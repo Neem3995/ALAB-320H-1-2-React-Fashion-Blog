@@ -1,8 +1,10 @@
+// props let the same article layout display either blog post
 function Article(props) {
   return (
     <article>
       <p className="postDate">{props.date}</p>
       <h2 className="postTitle">{props.title}</h2>
+      {/* the image and alt text both come from app through props */}
       <img src={props.image} alt={props.alt} />
       <p>
         {props.firstWord} ipsum, dolor sit amet consectetur adipisicing elit.

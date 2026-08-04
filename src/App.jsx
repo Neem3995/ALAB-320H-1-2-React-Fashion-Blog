@@ -5,12 +5,14 @@ import Article from "./components/Article.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 
+// app keeps the page in header, main content, and footer order
 function App() {
   return (
     <>
       <Header />
 
       <main>
+        {/* both posts reuse article and get their information through props */}
         <Article
           date="11/12/20"
           title="On the Street in Brooklyn"

@@ -1,5 +1,6 @@
 import Nav from "./Nav.jsx";
 
+// footer reuses nav and passes true so the footer links are shown
 function Footer() {
   return (
     <footer>

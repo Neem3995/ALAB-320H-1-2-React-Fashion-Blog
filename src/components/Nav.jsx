@@ -1,4 +1,6 @@
+// footerNav tells this component which group of links it should show
 function Nav(props) {
+  // the footer needs home and tips so it gets its own list
   if (props.footerNav) {
     return (
       <nav className="footerNavigation" aria-label="Footer Navigation">
@@ -16,6 +18,7 @@ function Nav(props) {
     );
   }
 
+  // if footerNav is not true then the main navigation is returned
   return (
     <nav className="mainNavigation" aria-label="Main Navigation">
       <ul>

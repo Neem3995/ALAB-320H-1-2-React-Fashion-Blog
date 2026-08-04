@@ -1,8 +1,10 @@
+/* this makes padding and borders stay inside the size i give an element */
 * {
   box-sizing: border-box;
 }
 
 html {
+  /* this border matches the light gray line on the left of the mockup */
   border-left: 5px solid lightgray;
 }
 
