@@ -1,0 +1,125 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+header,
+main,
+footer {
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  color: tomato;
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+header h2 {
+  margin: 0.5rem 0 2rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.mainNavigation ul,
+.footerNavigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.mainNavigation ul {
+  justify-content: space-between;
+}
+
+.mainNavigation a {
+  color: lightgray;
+  font-size: 1.25rem;
+}
+
+article {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.postDate {
+  margin: 1.5rem 0 0.5rem;
+  color: #999999;
+  font-size: 1.5rem;
+}
+
+.postTitle {
+  margin: 0 0 1rem;
+  color: #111111;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+}
+
+article p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+article p:not(.postDate)::first-letter {
+  float: left;
+  padding: 0.5rem 1rem 0 0;
+  color: lightgray;
+  font-size: 6rem;
+  line-height: 0.7;
+}
+
+.continues {
+  display: block;
+  margin-top: 1rem;
+  color: tomato;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+}
+
+.footerNavigation ul {
+  gap: 1.5rem;
+}
+
+.footerNavigation a {
+  color: tomato;
+  text-decoration: none;
+}
+
+.copyright {
+  color: lightgray;
+}
+
+@media (max-width: 700px) {
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .mainNavigation ul {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .postTitle {
+    font-size: 2.25rem;
+  }
+}
